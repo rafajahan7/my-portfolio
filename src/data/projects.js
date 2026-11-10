@@ -1,86 +1,117 @@
-import project1 from "../assets/projects/project1.png";
-import project2 from "../assets/projects/project2.png";
-import project3 from "../assets/projects/project3.svg";
+
+import bazardor from "../assets/projects/bazardor.png";
+import booknook from "../assets/projects/booknook.png";
+import hireloop from "../assets/projects/hireloop.png";
+import hostel from "../assets/projects/hostel.png";
 
 const projects = [
   {
     id: 1,
-    title: "Developer Portfolio & Showcase",
-    image: project1,
-    category: "Frontend Web Application",
+    title: "HireLoop",
+    category: "Full Stack Job Portal",
+    image: hireloop,
     technologies: [
-      "React",
+      "Next.js",
+      "TypeScript",
       "Tailwind CSS",
-      "JavaScript (ES6+)",
-      "React Router",
-      "Vite"
+      "MongoDB",
+      "Better Auth",
+      "Express.js",
     ],
     description:
-      "A modern, high-performance personal portfolio built for showcasing frontend engineering skills, interactive projects, and a responsive resume viewer. Features smooth section navigation, responsive mobile menu, dynamic routing, and ATS-friendly printable resume.",
-    live: "https://example.com/portfolio-demo",
-    github: "https://github.com/example/portfolio-frontend",
+      "A modern job portal connecting job seekers and recruiters. It features role-based dashboards, authentication, job management, and application tracking to simplify the recruitment process.",
+    live: "",
+    github: "",
     challenges: [
-      "Building a smooth active-section scroll spy with route-aware navigation",
-      "Crafting an ATS-compatible, print-optimized resume stylesheet in React",
-      "Ensuring fluid responsiveness across ultra-wide monitors down to small mobile viewports"
+      "Implementing role-based authentication for seekers, recruiters, and administrators.",
+      "Designing separate dashboards and navigation for different user roles.",
+      "Managing user data and authentication with MongoDB and Better Auth.",
     ],
     future: [
-      "Dark / Light theme mode toggle with localStorage persistence",
-      "Interactive contact form integration via EmailJS / Web3Forms",
-      "Markdown-powered tech blog section with syntax highlighting"
+      "Add advanced job search and filtering.",
+      "Implement real-time notifications.",
+      "Add recruiter analytics and application insights.",
     ],
   },
   {
     id: 2,
-    title: "TechGear - Modern Tech Store",
-    image: project2,
-    category: "E-Commerce Web App",
+    title: "BazarDor",
+    category: "E-commerce Web Application",
+    image: bazardor,
     technologies: [
-      "React",
+      "Next.js",
+      "TypeScript",
       "Tailwind CSS",
-      "JavaScript",
-      "Context API",
-      "REST API"
+      "DaisyUI",
+      "MongoDB",
+      "Better Auth",
     ],
     description:
-      "A responsive, full-featured electronics and tech gadgets web application. Includes instant product category filtering, price range slider, real-time shopping cart drawer with quantity adjustments, and simulated checkout flow.",
-    live: "https://example.com/techgear-demo",
-    github: "https://github.com/example/techgear-ecommerce",
+      "An online marketplace designed to make product discovery and shopping easier. It provides a responsive shopping experience with user authentication and product browsing.",
+    live: "https://a-7-bazar-dor.vercel.app/",
+    github: "",
     challenges: [
-      "Global cart state management with React Context without unnecessary re-renders",
-      "Smooth slide-over modal drawer implementation for cart and mobile filters",
-      "Instant multi-criteria client-side search and category filtering"
+      "Building a responsive interface for different screen sizes.",
+      "Implementing user authentication.",
+      "Organizing product information and marketplace navigation.",
     ],
     future: [
-      "Integration with Stripe payment gateway test API",
-      "User authentication and order history dashboard",
-      "Wishlist system with localStorage persistence"
+      "Add shopping cart functionality.",
+      "Implement online payment integration.",
+      "Add order tracking and product reviews.",
     ],
   },
   {
     id: 3,
-    title: "TaskFlow - Agile Kanban Board",
-    image: project3,
-    category: "Productivity & SaaS",
+    title: "BookNook",
+    category: "Book Management Web Application",
+    image: booknook,
     technologies: [
-      "React",
+      "Next.js",
+      "TypeScript",
       "Tailwind CSS",
-      "JavaScript (ES6+)",
-      "LocalStorage"
+      "MongoDB",
+      "Express.js",
+      "Better Auth",
     ],
     description:
-      "An intuitive task management and productivity dashboard inspired by Trello and Jira. Supports custom task creation, priority color-coding, multi-stage workflow columns (Backlog, In Progress, Completed), and search indexing.",
-    live: "https://example.com/taskflow-demo",
-    github: "https://github.com/example/taskflow-kanban",
+      "A web-based library management platform that allows users to explore books, borrow and return books, and manage their borrowing history. Includes authentication and book availability tracking.",
+    live: "https://booknook-frontend-gamma.vercel.app/",
+    github: "",
     challenges: [
-      "Seamless task state transitions across columns with proper data immutability",
-      "Persistent state synchronization with browser LocalStorage",
-      "Clean UI component design adhering to accessibility standards"
+      "Implementing secure authentication and protected API routes.",
+      "Managing book borrowing and returning operations.",
+      "Maintaining accurate available and total book copies.",
     ],
     future: [
-      "Drag and drop reordering using @dnd-kit/core",
-      "Firebase Firestore integration for multi-device real-time sync",
-      "Subtasks checklist and due-date notification system"
+      "Add book reviews and ratings.",
+      "Implement borrowing reminders.",
+      "Improve book recommendations.",
+    ],
+  },
+  {
+    id: 4,
+    title: "Super Hostel Management System",
+    category: "Hostel Management System",
+    image: hostel,
+    technologies: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+    ],
+    description:
+      "A hostel management platform designed to simplify daily hostel operations. It includes student services, staff management, meal and menu information, service booking, and complaint management.",
+    live: "",
+    github: "",
+    challenges: [
+      "Organizing different hostel management modules.",
+      "Designing interfaces for students, staff, and administrators.",
+      "Planning an efficient account and service management workflow.",
+    ],
+    future: [
+      "Implement backend integration.",
+      "Add online service request tracking.",
+      "Introduce automated hostel notifications.",
     ],
   },
 ];
